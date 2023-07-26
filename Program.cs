@@ -124,7 +124,7 @@ void PackScoreData()
                 packedData[rank,file] += ((ulong)thisSet[rank,file]) << (8 * set);
             }
         }
-        Console.WriteLine("{{0x{0,16:X}, 0x{1,16:X}, 0x{2,16:X}, 0x{3,16:X}}},", packedData[rank,0], packedData[rank,1], packedData[rank,2], packedData[rank,3]);
+        Console.WriteLine("{{0x{0:X16}, 0x{1:X16}, 0x{2:X16}, 0x{3:X16}}},", packedData[rank,0], packedData[rank,1], packedData[rank,2], packedData[rank,3]);
     }
 }
 
