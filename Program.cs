@@ -1,14 +1,15 @@
-﻿using System;
-using func;
+using PST;
 
-namespace PST {
-    class PST {
+namespace Program {
+    class Program {
         public static void Main(string[] args) {
             if (args.Length > 0) {
-                if (args[0] == "true") func.PackScoreData(true);
-                else func.PackScoreData(true);
+                if (args[0].ToLower() == "true" || args[0].ToLower() == "t")
+                    PieceTables.Pack(true);
+                else 
+                    PieceTables.Pack(false);
             } else {
-                func.PackScoreData(false);
+                PieceTables.Pack(false);
             }
         }
     }
